@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* 色 */
+:root {
+  --green : #eefbe3;
+  --blue1: #f0f9fe;
+  --blue2: #6abeeb;
+  --blue3: #16a6cb;
+  --blue4: #127791;
+  --black: #222;
+  --white: #fff;
+  --gray1: #eee;
+  --gray2: #ccc;
+  --gray3: #888;
+  --gray4: #555;
+  --gray5: #444;
+  --red: #c50a0a;
+}
+
+
+/* 基本 */
+
+body {
+  color: var(--black);
+  font-family: sans-serif;
+  line-height: 1.5;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
