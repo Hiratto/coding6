@@ -46,6 +46,18 @@ img {
   vertical-align: bottom;
 }
 
+/* パーツグリッド */
+
+.partsGrid {
+  display: grid;
+  grid-template-columns: minmax(8vw,1fr) minmax(auto,1088px) minmax(8vw,1fr) ;
+}
+
+.partsGrid > * {
+  grid-column: 2;
+}
+
+
 /* 12分割グリッド */
 
 .grid12 {
@@ -155,3 +167,36 @@ img {
   }
 }
 
+/* 一覧（商品カテゴリー） */
+
+.list-plant {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .list-plant {
+    padding-bottom: 86px;
+  }
+}
+
+/* 一覧（体験） */
+
+.list-exp {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* 一覧（人気商品） */
+
+.list-item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  list-item {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
