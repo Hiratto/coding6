@@ -287,3 +287,70 @@ img {
     grid-column: span 3;
   }
 }
+
+/* フッター */
+
+.footer.partsGrid {
+  row-gap: 74px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: solid 1px var(--blue2);
+  background-color: var(--blue1);
+}
+
+@media (min-width: 768px)  {
+  .footer.partsGrid {
+    row-gap: 99px;
+  }
+}
+
+/* フッター：ナビ */
+
+.footer-nav.grid12 {
+  row-gap: 20px;
+}
+
+.footer-nav h4 {
+  margin-bottom: 20px;
+  color: var(--gray3);
+}
+
+.footer-nav ul {
+  display: grid;
+  row-gap: 7px;
+}
+
+/* フッターサイト情報 */
+
+.footer-site .grid12 {
+  row-gap: 32px;
+}
+
+.profile p {
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.copyright ul {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 18px;
+  font-size: 12px;
+}
+
+.copyright p {
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    justify-self: end;
+    align-self: end;
+    text-align: right;
+  }
+  .copyright ul {
+    column-gap: 28px;
+  }
+}
