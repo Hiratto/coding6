@@ -99,6 +99,122 @@ img {
   }
 }
 
+/* ヘッダー */
+
+.header.partsGrid {
+  padding-top: 26px;
+}
+
+.header-nav.grid12 {
+  row-gap: 27px;
+  align-items: center;
+}
+
+.header-nav ul {
+  grid-column: span 3;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 20px;
+  color: var(--blue4);
+  font-size: 14px;
+}
+
+.header-nav .cart {
+  grid-column: span 1;
+  justify-self: end;
+  color: var(--blue4);
+  font-size: 23px;
+}
+
+@media (min-width: 768px) {
+  .header.partsGrid {
+    padding-top: 39px;
+  }
+  .header-nav img {
+    grid-column: span 2;
+  }
+  .header-nav ul {
+    grid-column: span 9;
+    justify-self: end;
+    gap: 40px;
+    font-size: 16px;
+  }
+  .header-nav .cart {
+    font-size: 30px;
+  }
+}
+
+/* ヘッダートップページ */
+
+.top .header.partsGrid {
+  background-image: url(/img/illustration.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.catch.grid12 {
+  padding-top: 195px;
+  padding-bottom: 226px;
+  row-gap: 32px;
+}
+
+.catch h1 {
+  font-family: "Noto Sans JP,sans-serif";
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.catch a {
+  width: 260px;
+  padding: 13px 0 17px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
+  border: solid 2px var(--white);
+  border-radius: 4px;
+  background-color: var(--blue3);
+  color: var(--white);
+  font-family: "Noto Sans JP,sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .catch h1 {
+    grid-column: span 6;
+    font-size: 54px;
+    max-width: 8em;
+  }
+}
+
+/* ヘッダートップページ：ディバイダー */
+
+.header {
+  position: relative;
+}
+
+.custom-shape-divider-top-1626240769 {
+  grid-column: 1 / -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1626240769 svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 128px;
+}
+
+.custom-shape-divider-top-1626240769 .shape-fill {
+  fill: var(--white);
+}
+
 /* 一覧：リスト */
 
 .list ul.grid12 {
